@@ -6,14 +6,21 @@ Using Ecilipse IDE and Kotlin Marketplace Extension
 
 This is only my note during learning and coding something may be mistake.
 
-Theethawat Savastham | Student at Prince of Songkla University Hatyai Thailand (At this moment I cannot typing in Thai in Ecilipse IDE)
+Theethawat Savastham | Student at Prince of Songkla University Hatyai Thailand (At first I cannot typing in Thai in Ecilipse IDE) Now I learn in IntelliJ IDEA it can type in Thai but I'm idle.
 
 ## Structure
 *  Don't Need a  Pre-processor because Kotlin is initial itself at the begining from IDE
 * Don't worry about package name, It nescessory only to show that it are in the same domain. In file system they don't show in class view but in IDE it will show you the structure of class
 * Function Initial run with main
 * No Semicolon needed in Kotlin
-
+## Table of Content
+ * [Basic Syntax](#basic-syntax)
+ * [Function](#function)
+  * [Variable](#variable)
+  * [String Management](#string-management)
+  *[Array](#array)
+  *[Class](#class)
+  
 ## Basic Syntax
 ### printing out the word
 ```
@@ -46,10 +53,6 @@ fun sum(a:Int,b:Int){
 	println("a is $a  b is $b")
 }
 ```
-### Basic Function and library
-* Kotlin will add Basic Library name kotlin.* if you use IDE or compiler
-* There include many function inside
-* String Function Reference is located at https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html
 
 ### Call function to use Return Value
 In variable define or redefine
@@ -108,3 +111,68 @@ fun incrementX() {
   Can use ```.trimIndent ``` for trim white space before text like a white space
   and Can use triple quote """ for let string in the string can be multiple line as we code
   
+  ## Array 
+  ### Array Declaring 
+  Can Creating Array with Initial Value , Initial Value Using Function or Uninitialized using normal form ```arrayOf``` 
+  if you initial value
+  ```
+  val a = intArrayOf(11,13,15,17,12)
+  ```
+  or using Specific type of Array
+  
+   * BooleanArray   `booleanArrayOf(true, false)  `
+   * ByteArray   `byteArrayOf(1, 2, 3)   `
+   * CharArray   `charArrayOf('a', 'b', 'c')   `
+   * DoubleArray   `doubleArrayOf(1.2, 5.0)   `
+   * FloatArray   `floatArrayOf(1.2, 5.0)   `
+   * IntArray `intArrayOf(1, 2, 3) `
+   * LongArray `longArrayOf(1, 2, 3) `
+   * ShortArray `shortArrayOf(1, 2, 3)` 
+ 
+ or can design array by using function like
+ 
+    val asc = Array(5,init = {i->i+1})
+     for (b in asc){
+         println(b)
+     }
+ 
+ ### Array Properties
+  * Properties that can use when declare an Array
+  `sortedArray(), sortedArrayDescending() `
+  * Properties that can use when we using function
+  `sort(), sortDescending() , min(), max(),first(), last()` it will return a view of the things 
+  that you want in array (some only for Int or Number Variables)
+   for example
+   
+        println("List of Array B is ${b.sorted()}")
+ ### Collection
+  Collection is like array but it's the tool that can easier management
+  * List use `Listof()` (Can replace string with other type)
+  
+        val  myList = listOf<String>("Theethawat","Songpon")
+  * Map use `mapOf()`
+ 
+         val myMap = mapOf<Int,String>(Pair(1,"Theethawat"), Pair(2,"Theematach"))
+  * Set use `setOf()`
+  
+        val mySet = setOf<String>("Theethawat","Sirinuch")
+    using 3 types of collection and other type of Array can be random access
+## Class
+### Basic Concept of Class
+ * It's like class in Java and sometime it's like stucture in C 
+ in my own opinion
+ * Use function (main or any) to call a class
+ * If Compare to Java it has 3 part 
+    * Field for variable declare and initial (Java divide into 
+    field and Constructor) and can use argument `also()` to make this variable call the function like `val nameInput = "The Input value is $name".also(::println)`
+    * `let()` can use for initial, set value and call function in class
+    * function `fun()` 
+ * Everythings contain public, protected, private same like other OOP 
+ * Can use dot(.) for go to the attribute like in C or Java
+ * For Example in file Address.kt
+ 
+ 
+## Basic Function and library
+* Kotlin will add Basic Library name kotlin.* if you use IDE or compiler
+* There include many function inside
+* String Function Reference is located at https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html
