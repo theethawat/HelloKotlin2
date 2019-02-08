@@ -29,7 +29,21 @@ package theethawat.demo
     }
 }
 
+class StudentInfo(firstName:String,lastName:String,studentID:Int){
+    val  Info ="His name is $firstName $lastName ID $studentID"
+    init{
+        showingFun(this.Info)
+    }
+    fun showingFun(information:String){
+        println(information)
+    }
+}
+
 /*Kotlin want main function to call the class?*/
 fun main(){
     TestClass("theethawat")
+    val id = 50;
+
+    //Can use both value from variable or typing value
+    StudentInfo("Theethawat","Savastham",150)
 }
