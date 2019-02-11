@@ -18,8 +18,8 @@ Theethawat Savastham | Student at Prince of Songkla University Hatyai Thailand (
  * [Function](#function)
   * [Variable](#variable)
   * [String Management](#string-management)
-  *[Array](#array)
-  *[Class](#class)
+  * [Array](#array)
+  * [Class](#class)
   
 ## Basic Syntax
 ### printing out the word
@@ -165,7 +165,7 @@ fun incrementX() {
  * If Compare to Java it has 3 part 
     * Field for variable declare and initial (Java divide into 
     field and Constructor) and can use argument `also()` to make this variable call the function like `val nameInput = "The Input value is $name".also(::println)`
-    * `let()` can use for initial, set value and call function in class
+    * `init()` can use for initial, set value and call function in class
     * function `fun()` 
  * Everythings contain public, protected, private same like other OOP 
  * Can use dot(.) for go to the attribute like in C or Java
