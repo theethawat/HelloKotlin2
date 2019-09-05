@@ -170,7 +170,21 @@ fun incrementX() {
  * Everythings contain public, protected, private same like other OOP 
  * Can use dot(.) for go to the attribute like in C or Java
  * For Example in file Address.kt
- 
+
+## Object
+### Companion object 
+If your class have a Companion object show that you can implement or adding the function to that object like
+
+	class MyClass {
+    	companion object { }  // will be called "Companion"
+    	}
+
+    	fun MyClass.Companion.printCompanion() { println("theethawat") }
+
+    	fun main() {
+    	MyClass.printCompanion()
+    	} 
+You will got an output "Theethawat", i pick it from official Document at [Object Documents in Kotlin](https://kotlinlang.org/docs/reference/object-declarations.html#companion-objects)
  
 ## Basic Function and library
 * Kotlin will add Basic Library name kotlin.* if you use IDE or compiler
